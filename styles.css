@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "inter", sans-serif;
+    color: #363940;
+}
+
+header {
+    background-color: #2965f1;
+    padding: 20px 0;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.first-section {
+    background-color: #fff;
+    padding: 60px 0;
+    min-height: 100vh;
+}
+
+.first-section h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.first-section p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.first-section img {
+    max-width: 715px;
+    width: 100%;
+}
+
+.second-section {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.second-section h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.select {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    background: url("/assets/images/ep_arrow-down.svg") no-repeat right center;
+    background-size: 12px;
+    appearance: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.second-section ul {
+    list-style-image: url("/assets/images/solar_map-arrow-up-bold.svg");
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.second-section label {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+hr {
+    background-color: #f0f4ff;
+    font-weight: bold;
+}
+
+table {
+   width: 300px;
+    border-collapse: collapse;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #303030;
+}
+
+th, td {
+    border: 1px solid #95a1bb;
+    padding: 8px;
+    text-align: center;
+    height: auto;
+}
+
+footer {
+    background-color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #303030;
+    text-decoration: none;
+}
