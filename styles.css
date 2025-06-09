@@ -5,8 +5,8 @@
 }
 
 body {
-    font-family: "inter", sans-serif;
-    color: #363940;
+    font-family: "Inter", sans-serif;
+    color: #303030;
 }
 
 header {
@@ -109,18 +109,145 @@ table {
 
 th, td {
     border: 1px solid #95a1bb;
-    padding: 8px;
+    padding: 12px 15px;
     text-align: center;
     height: auto;
 }
 
 footer {
     background-color: #e0e0e0;
-    padding: 20px;
+    padding: 26px 0;
     text-align: center;
 }
 
 footer a {
     color: #303030;
     text-decoration: none;
+}
+
+[data-cy="hw2-header-span"] {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+[data-cy="hw2-section-main-pre"] {
+    background-color: #fff;
+    padding: 60px 0;
+    min-height: 100vh;
+}
+
+[data-cy="hw2-main-image"] {
+    max-width: 715px;
+    width: 100%;
+}
+
+[data-cy="hw2-section-about-pre"] {
+    background-color: #f9f9f9;
+    padding: 100px 0;
+}
+
+[data-cy="hw2-select-pre"] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    background: url("/assets/images/ep_arrow-down.svg") no-repeat right center;
+    background-size: 12px;
+    appearance: none;
+}
+
+[data-cy="hw2-section-title-pre"] {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+[data-cy="hw2-frameworks-list-pre"] {
+    font-weight: 700;
+    font-size: 16px;
+    padding: 0 20px;
+    list-style-image: url("/assets/images/solar_map-arrow-up-bold.svg");
+}
+
+[data-cy="hw2-label-pre"] {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+[data-cy="hw2-btn-pre"] {
+    border: none;
+    border-radius: 6px;
+    width: auto;
+    height: auto;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+[data-cy="hw2-line-pre"] {
+    margin: 60px 0;
+}
+
+[data-cy="hw2-about-table-pre"] {
+    border-collapse: collapse;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+[data-cy="hw2-about-table-pre"] th,
+[data-cy="hw2-about-table-pre"] td {
+    border: 1px solid #95a1bb;
+    padding: 8px;
+    text-align: center;
+}
+
+footer a[data-cy="hw-footer-link-pre"] {
+    font-weight: 400;
+    font-size: 14px;
+    color: #303030;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    /* Заголовок первого раздела */
+    [data-cy="hw2-main-title"],
+    .first-section h1 {
+        font-size: 32px;
+    }
+
+    /* Изображение */
+    [data-cy="hw2-main-image"],
+    .first-section img {
+        max-width: 100%;
+    }
+
+    /* Таблица */
+    [data-cy="hw2-about-table-pre"],
+    table {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    /* Текстовое поле */
+    [data-cy="hw2-text-field-pre"],
+    input[type="text"] {
+        width: 100%;
+    }
+
+    /* Селект */
+    [data-cy="hw2-select-pre"] {
+        width: 100%;
+    }
+
+    /* Кнопка — по желанию */
+    [data-cy="hw2-btn-pre"] {
+        width: 100%;
+        text-align: center;
+    }
 }

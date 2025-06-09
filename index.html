@@ -12,50 +12,50 @@
 <!-- ⚠️ Атрибут data-cy удалять нельзя! Он учавствует в проверке. Если его удалить, тесты не пройдут. -->
 
 <header>
-    <span>IT-INCUBATOR</span>
+    <h1 data-cy="hw2-header-span">IT-INCUBATOR</h1>
 </header>
 
-<section data-cy="hw1-section-main-pre">
+<section data-cy="hw2-section-main-pre" class="first-section">
     <!-- 1) В этом разделе создай 3 дочерних элемента: -->
 
     <!-- a) Заголовок первого уровня со своим ФИО -->
-    <h1>Одинаев Музафар</h1>
+    <h1 data-cy="hw2-main-title">Одинаев Музафар</h1>
     <!-- b) Несколько строк о себе: где учишься или работаешь, хобби, увлечения. Используй тег для абзаца. Длина строки должна быть больше 50-ти симвов (пробелы и др знаки припинания тоже считаются символом) -->
-    <p>Фрилансер QA Engineer. Занимаюсь ручным тестированием. На данный момент хочу подтянуть знания в области разработки.</p>
+    <p data-cy="hw2-text">Фрилансер QA Engineer. Занимаюсь ручным тестированием. На данный момент хочу подтянуть знания в области разработки.</p>
     <!-- c) Фото (или любую картинку из интернета). Не забудь добавить описание на случай, если изображение не загрузится -->
-    <img src="/assets/images/Clip%20path%20group.png" alt="Моё фото">
+    <img src="/assets/images/Clip%20path%20group.png" alt="Моё фото" data-cy="hw2-main-image">
 </section>
 
 <section data-cy="hw1-section-about-pre">
     <!-- 2) В этом разделе создай выпадающий список с разными городами (не меньше 3-х). Свой город сделай вторым в этом списке. С помощью специального атрибута, сделай так, чтобы твой город всегда был выбранным по умолчанию  -->
-    <select>
+    <select data-cy="hw2-select-pre">
         <option>Latvia</option>
-        <option selected disabled>Tajikistan</option>
-        <option>China</option>>
+        <option selected>Tajikistan</option>
+        <option>China</option>
     </select>
     <div data-cy="hw1-unordered-list-box-pre">
         <!-- 3) В этом разделе создай 2 дочерних элемента: -->
 
         <!-- a) Заголовок 2-го уровня (любимые книги/фильмы/блюда/страны... и т.п.) -->
-        <h2>Любимые фильмы</h2>
+        <h2 data-cy="hw2-section-title-pre">Любимые фреймворки</h2>
         <!-- b) Маркированный список. В списке должно быть не менее 3-х элементов -->
-        <ul>
-            <li>Салахадин Аюби</li>
-            <li>Воскресший Эртугрул</li>
-            <li>Салахадин Аюби</li>
+        <ul data-cy="hw2-frameworks-list-pre">
+            <li>React</li>
+            <li>Angular</li>
+            <li>Vue</li>
         </ul>
     </div>
     <div data-cy="hw1-ordered-list-box-pre">
         <!-- 3) В этом разделе создай 2 дочерних элемента: -->
 
         <!-- a) Заголовок 2-го уровня с другим названием (любимые книги/фильмы/блюда/страны... и т.п.) -->
-        <h2>Любимые страны</h2>
+        <h2>Рейтинг любимых книг</h2>
         <!-- b) Нумерованный (упорядоченный) список. В списке должно быть не менее 3-х элементов -->
-        <ul>
-            <li>Tajikistan</li>
-            <li>Germania</li>
-            <li>Dubai</li>
-        </ul>
+        <ol>
+            <li>HTML5+CSS3. Основы современного web-дизайна</li>
+            <li>HTML5, CSS3 и JavaScript. Исчерпывающее руководство</li>
+            <li>HTML5+CSS3. Разработка сайтов для любых браузеров и устройств. 2-е издание</li>
+        </ol>
     </div>
     <div data-cy="hw1-skills-box-pre">
         <h2>Мои скиллы</h2>
@@ -64,19 +64,23 @@
             - Каждый чекбокс должен быть связан со своей подписью. Для этого чекбокс должен находиться в элементе для подписи
             - Отметь "галочкой" (с помощью специального атрибута) темы, которые ты уже знаешь. -->
         <form action="">
-            <label for="">
-                <input type="checkbox" name="c#" checked>
-                C#
+            <label data-cy="hw2-label-pre">
+                <input type="checkbox" name="CSS3" checked>
+                CSS3
             </label>
-            <label for="">
-                <input type="checkbox" name="qa" checked>
-                QA
+            <label data-cy="hw2-label-pre">
+                <input type="checkbox" name="HTML5" checked>
+                HTML5
             </label>
-            <label for="">
-                <input type="checkbox" name="js">
-                JS
+            <label data-cy="hw2-label-pre">
+                <input type="checkbox" name="JavaScript" checked>
+                JavaScript
             </label>
-            <label for="">
+            <label data-cy="hw2-label-pre">
+                <input type="checkbox" name="Jquery">
+                Jquery
+            </label>
+            <label data-cy="hw2-label-pre">
                 <input type="checkbox" name="react">
                 React
             </label>
@@ -85,15 +89,15 @@
     <!-- 5) Создай здесь однострочное поле для ввода текста с подсказкой "Новый скилл", которая исчезает, когда начинаешь что-то печатать (для подсказки есть специальный атрибут) -->
     <div>
         <form action="">
-            <input type="New Skill" placeholder="Новый скилл">
+            <input type="text" data-cy="hw2-text-field-pre" placeholder="Новый скилл">
             <!-- 6) Создай здесь кнопку “Добавить” -->
-            <button type="submit">Добавить</button>
+            <button type="submit" data-cy="hw2-btn-pre">Добавить</button>
             <!-- 7) Добавь горизонтальную линию (для этого есть специальный тег) -->
-            <hr width="100%" size="2">
+            <hr data-cy="hw2-line-pre" width="100%" size="2">
         </form>
     </div>
     <div>
-        <table border="1" data-cy="hw-about-table-pre">
+        <table border="1" data-cy="hw2-about-table-pre">
             <!-- 8) В таблице сделай 5 строк и 3 столбца.
                         - В первой строке ячейки заголовков, в остальных обычные ячейки
                         - Добавь границы для всей таблицы с помощью специального атрибута border="". Он устарел, но работает
@@ -126,8 +130,7 @@
     </div>
 </section>
 <footer data-cy="hw-footer-pre">
-    <!-- 9) Создай здесь ссылку на наш сайт https://it-incubator.io/ (текст ссылки должен быть it-incubator) -->
-    <p><a href="https://it-incubator.io/" target="_blank">it-incubator</a></p>
+    <p><a href="https://it-incubator.io/" target="_blank" data-cy="hw-footer-link-pre">it-incubator</a></p>
 </footer>
 </body>
 </html>
