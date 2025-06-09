@@ -165,6 +165,12 @@ footer a {
     margin-bottom: 25px;
 }
 
+[data-cy="hw2-section-about-pre"] {
+    background-color: #f9f9f9;
+    padding: 100px 0;
+}
+
+
 [data-cy="hw2-frameworks-list-pre"] {
     font-weight: 700;
     font-size: 16px;
@@ -203,7 +209,7 @@ footer a {
 [data-cy="hw2-about-table-pre"] th,
 [data-cy="hw2-about-table-pre"] td {
     border: 1px solid #95a1bb;
-    padding: 8px;
+    padding: 12px 15px;
     text-align: center;
 }
 
@@ -213,6 +219,13 @@ footer a[data-cy="hw-footer-link-pre"] {
     color: #303030;
     text-decoration: none;
 }
+
+[data-cy="hw2-books-list-pre"] {
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0 20px;
+}
+
 
 @media (max-width: 768px) {
     /* Заголовок первого раздела */
